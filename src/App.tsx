@@ -1,5 +1,9 @@
+import { useRoutes } from 'react-router-dom';
+import routes from './router';
+
 function App() {
-  return <div className="text-2xl">CardAxe</div>;
+  const content = useRoutes(routes);
+  return content;
 }
 
 export default App;
